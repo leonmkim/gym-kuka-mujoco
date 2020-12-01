@@ -1,0 +1,329 @@
+ pip install -e .
+Obtaining file:///home/srlxprmntsleon/gym-kuka-mujoco
+Collecting absl-py==0.7.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/31/bc/ab68120d1d89ae23b694a55fe2aece2f91194313b71f9b05a80b32d3c24b/absl-py-0.7.0.tar.gz (96kB)
+    100% |████████████████████████████████| 102kB 3.1MB/s 
+Collecting astor==0.7.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/35/6b/11530768cac581a12952a2aad00e1526b89d242d0b9f59534ef6e6a1752f/astor-0.7.1-py2.py3-none-any.whl
+Collecting certifi==2018.11.29 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/9f/e0/accfc1b56b57e9750eba272e24c4dddeac86852c2bebd1236674d7887e8a/certifi-2018.11.29-py2.py3-none-any.whl (154kB)
+    100% |████████████████████████████████| 163kB 4.0MB/s 
+Collecting cffi==1.12.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/be/99/3a088b41d93aa46f07cf7fd4da1b3287e6899ad7b2b75f1a177edf025e1a/cffi-1.12.1-cp36-cp36m-manylinux1_x86_64.whl (428kB)
+    100% |████████████████████████████████| 430kB 3.2MB/s 
+Collecting chardet==3.0.4 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl
+Collecting Click==7.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+    100% |████████████████████████████████| 81kB 7.9MB/s 
+Collecting cloudpickle==0.8.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/47/d5/efa7cacef5d3bdcd71d7053a698fb9b64a20fff5cb3c592efefa53ea5578/cloudpickle-0.8.0-py2.py3-none-any.whl
+Collecting commentjson==0.7.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/81/63/9fafac8fb75d153deec7dee7c255905fe5e44d73e6c6788dc848bb53cc97/commentjson-0.7.1.tar.gz
+Collecting cycler==0.10.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/f7/d2/e07d3ebb2bd7af696440ce7e754c59dd546ffe1bbe732c8ab68b9c834e61/cycler-0.10.0-py2.py3-none-any.whl
+Collecting Cython==0.29.5 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/16/98/49aa24054e99e9c7734e49d6996662f547e4e2faae0051d35fbbc461afa4/Cython-0.29.5-cp36-cp36m-manylinux1_x86_64.whl (2.1MB)
+    100% |████████████████████████████████| 2.1MB 921kB/s 
+Collecting dill==0.2.9 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/fe/42/bfe2e0857bc284cbe6a011d93f2a9ad58a22cb894461b199ae72cfef0f29/dill-0.2.9.tar.gz (150kB)
+    100% |████████████████████████████████| 153kB 8.0MB/s 
+Collecting future==0.17.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/90/52/e20466b85000a181e1e144fd8305caf2cf475e2f9674e797b222f8105f5f/future-0.17.1.tar.gz (829kB)
+    100% |████████████████████████████████| 829kB 2.1MB/s 
+Collecting gast==0.2.2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/4e/35/11749bf99b2d4e3cceb4d55ca22590b0d7c2c62b9de38ac4a4a7f4687421/gast-0.2.2.tar.gz
+Collecting glfw==1.7.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/5d/65/c6275744a01425195f1f446e022e5dfa6497aa68479a3952e434e04b2fa0/glfw-1.7.1.tar.gz
+Collecting glob2==0.6 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/f0/e8/970c7a031b2d7f9a21fefaa8c9d5c38001f8f25055f4ffcb32b3dbecd1ea/glob2-0.6.tar.gz
+Collecting grpcio==1.18.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/51/a3/489ce6a67047263e9b0da8784b2925c4f89b688a6e33073c5bb6c4c2867f/grpcio-1.18.0-cp36-cp36m-manylinux1_x86_64.whl (10.6MB)
+    100% |████████████████████████████████| 10.6MB 191kB/s 
+Collecting gym==0.11.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/52/d6/d0b7918f4da95fbc64cf9466d45c7880b1d09cc5b46215aaad1d8e185297/gym-0.11.0.tar.gz (1.5MB)
+    100% |████████████████████████████████| 1.5MB 1.3MB/s 
+Collecting h5py==2.9.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/30/99/d7d4fbf2d02bb30fb76179911a250074b55b852d34e98dd452a9f394ac06/h5py-2.9.0-cp36-cp36m-manylinux1_x86_64.whl (2.8MB)
+    100% |████████████████████████████████| 2.8MB 690kB/s 
+Collecting idna==2.8 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/14/2c/cd551d81dbe15200be1cf41cd03869a46fe7226e7450af7a6545bfc474c9/idna-2.8-py2.py3-none-any.whl (58kB)
+    100% |████████████████████████████████| 61kB 6.4MB/s 
+Collecting imageio==2.5.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/af/0a/943c965d372dae0b1f1482677d29030ab834351a61a9a632fd62f27f1523/imageio-2.5.0-py3-none-any.whl (3.3MB)
+    100% |████████████████████████████████| 3.3MB 624kB/s 
+Collecting joblib==0.13.2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/cd/c1/50a758e8247561e58cb87305b1e90b171b8c767b15b12a1734001f41d356/joblib-0.13.2-py2.py3-none-any.whl (278kB)
+    100% |████████████████████████████████| 286kB 5.8MB/s 
+Collecting Keras-Applications==1.0.7 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/90/85/64c82949765cfb246bbdaf5aca2d55f400f792655927a017710a78445def/Keras_Applications-1.0.7-py2.py3-none-any.whl (51kB)
+    100% |████████████████████████████████| 61kB 6.7MB/s 
+Collecting Keras-Preprocessing==1.0.9 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/c0/bf/0315ef6a9fd3fc2346e85b0ff1f5f83ca17073f2c31ac719ab2e4da0d4a3/Keras_Preprocessing-1.0.9-py2.py3-none-any.whl (59kB)
+    100% |████████████████████████████████| 61kB 5.2MB/s 
+Collecting kiwisolver==1.0.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/69/a7/88719d132b18300b4369fbffa741841cfd36d1e637e1990f27929945b538/kiwisolver-1.0.1-cp36-cp36m-manylinux1_x86_64.whl (949kB)
+    100% |████████████████████████████████| 952kB 1.9MB/s 
+Collecting lockfile==0.12.2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/c8/22/9460e311f340cb62d26a38c419b1381b8593b0bb6b5d1f056938b086d362/lockfile-0.12.2-py2.py3-none-any.whl
+Collecting Markdown==3.0.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/7a/6b/5600647404ba15545ec37d2f7f58844d690baf2f81f3a60b862e48f29287/Markdown-3.0.1-py2.py3-none-any.whl (89kB)
+    100% |████████████████████████████████| 92kB 10.4MB/s 
+Collecting matplotlib==3.0.2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/71/07/16d781df15be30df4acfd536c479268f1208b2dfbc91e9ca5d92c9caf673/matplotlib-3.0.2-cp36-cp36m-manylinux1_x86_64.whl (12.9MB)
+    100% |████████████████████████████████| 12.9MB 157kB/s 
+Collecting mock==2.0.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/e6/35/f187bdf23be87092bd0f1200d43d23076cee4d0dec109f195173fd3ebc79/mock-2.0.0-py2.py3-none-any.whl (56kB)
+    100% |████████████████████████████████| 61kB 7.4MB/s 
+Collecting mpi4py==3.0.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/55/a2/c827b196070e161357b49287fa46d69f25641930fd5f854722319d431843/mpi4py-3.0.1.tar.gz (1.4MB)
+    100% |████████████████████████████████| 1.4MB 1.4MB/s 
+Collecting mujoco-py==1.50.1.68 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/cf/8c/64e0630b3d450244feef0688d90eab2448631e40ba6bdbd90a70b84898e7/mujoco-py-1.50.1.68.tar.gz (120kB)
+    100% |████████████████████████████████| 122kB 9.7MB/s 
+Collecting numpy==1.16.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/f5/bf/4981bcbee43934f0adb8f764a1e70ab0ee5a448f6505bd04a87a2fda2a8b/numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl (17.3MB)
+    100% |████████████████████████████████| 17.3MB 111kB/s 
+Collecting opencv-python==4.0.0.21 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/37/49/874d119948a5a084a7ebe98308214098ef3471d76ab74200f9800efeef15/opencv_python-4.0.0.21-cp36-cp36m-manylinux1_x86_64.whl (25.4MB)
+    100% |████████████████████████████████| 25.4MB 76kB/s 
+Collecting pandas==0.24.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/e6/de/a0d3defd8f338eaf53ef716e40ef6d6c277c35d50e09b586e170169cdf0d/pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl (10.1MB)
+    100% |████████████████████████████████| 10.1MB 204kB/s 
+Collecting pbr==5.1.2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/8c/7f/fed53b379500fd889707d1f6e61c2a35e12f2de87396894aff89b017d1d6/pbr-5.1.2-py2.py3-none-any.whl (107kB)
+    100% |████████████████████████████████| 112kB 10.1MB/s 
+Collecting Pillow==5.4.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/85/5e/e91792f198bbc5a0d7d3055ad552bc4062942d27eaf75c3e2783cf64eae5/Pillow-5.4.1-cp36-cp36m-manylinux1_x86_64.whl (2.0MB)
+    100% |████████████████████████████████| 2.0MB 962kB/s 
+Collecting progressbar2==3.39.2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/0c/78/0ae9129f12098adbcfee0c51a81dfa94cdc1853142aa4d62e63c6a355bd7/progressbar2-3.39.2-py2.py3-none-any.whl
+Collecting protobuf==3.6.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/c2/f9/28787754923612ca9bfdffc588daa05580ed70698add063a5629d1a4209d/protobuf-3.6.1-cp36-cp36m-manylinux1_x86_64.whl (1.1MB)
+    100% |████████████████████████████████| 1.1MB 1.6MB/s 
+Collecting pycparser==2.19 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/68/9e/49196946aee219aead1290e00d1e7fdeab8567783e83e1b9ab5585e6206a/pycparser-2.19.tar.gz (158kB)
+    100% |████████████████████████████████| 163kB 6.2MB/s 
+Collecting pyglet==1.3.2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/1c/fc/dad5eaaab68f0c21e2f906a94ddb98175662cc5a654eee404d59554ce0fa/pyglet-1.3.2-py2.py3-none-any.whl (1.0MB)
+    100% |████████████████████████████████| 1.0MB 1.8MB/s 
+Collecting pyparsing==2.3.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/de/0a/001be530836743d8be6c2d85069f46fecf84ac6c18c7f5fb8125ee11d854/pyparsing-2.3.1-py2.py3-none-any.whl (61kB)
+    100% |████████████████████████████████| 71kB 5.3MB/s 
+Collecting python-dateutil==2.8.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/41/17/c62faccbfbd163c7f57f3844689e3a78bae1f403648a6afb1d0866d87fbb/python_dateutil-2.8.0-py2.py3-none-any.whl (226kB)
+    100% |████████████████████████████████| 235kB 6.7MB/s 
+Collecting python-utils==2.3.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/eb/a0/19119d8b7c05be49baf6c593f11c432d571b70d805f2fe94c0585e55e4c8/python_utils-2.3.0-py2.py3-none-any.whl
+Collecting pytz==2018.9 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/61/28/1d3920e4d1d50b19bc5d24398a7cd85cc7b9a75a490570d5a30c57622d34/pytz-2018.9-py2.py3-none-any.whl (510kB)
+    100% |████████████████████████████████| 512kB 3.6MB/s 
+Collecting pyzmq==17.1.2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/48/93/59592cb294761aaa40589b544eaa5175446d687ff95beeeb666de60f3274/pyzmq-17.1.2-cp36-cp36m-manylinux1_x86_64.whl (998kB)
+    100% |████████████████████████████████| 1.0MB 1.8MB/s 
+Collecting requests==2.21.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/7d/e3/20f3d364d6c8e5d2353c72a67778eb189176f08e873c9900e10c0287b84b/requests-2.21.0-py2.py3-none-any.whl (57kB)
+    100% |████████████████████████████████| 61kB 8.8MB/s 
+Collecting scipy==1.2.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/7f/5f/c48860704092933bf1c4c1574a8de1ffd16bf4fde8bab190d747598844b2/scipy-1.2.1-cp36-cp36m-manylinux1_x86_64.whl (24.8MB)
+    100% |████████████████████████████████| 24.8MB 78kB/s 
+Collecting seaborn==0.9.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/a8/76/220ba4420459d9c4c9c9587c6ce607bf56c25b3d3d2de62056efe482dadc/seaborn-0.9.0-py3-none-any.whl (208kB)
+    100% |████████████████████████████████| 215kB 6.5MB/s 
+Collecting six==1.12.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Collecting stable-baselines==2.5.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/bf/05/6ddd53cb3fc29ce04fd145df1694c17b97b24f4c48d6020ae634a3c4319c/stable_baselines-2.5.0-py3-none-any.whl (238kB)
+    100% |████████████████████████████████| 245kB 5.8MB/s 
+Collecting tensorboard==1.12.2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/07/53/8d32ce9471c18f8d99028b7cef2e5b39ea8765bd7ef250ca05b490880971/tensorboard-1.12.2-py3-none-any.whl (3.0MB)
+    100% |████████████████████████████████| 3.1MB 682kB/s 
+Collecting tensorflow==1.13.0rc2 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/76/0f/3681bea0d06a6d60495870022a8653df0e7b33c329bff921646aeff0311e/tensorflow-1.13.0rc2-cp36-cp36m-manylinux1_x86_64.whl (92.6MB)
+    100% |████████████████████████████████| 92.6MB 21kB/s 
+Collecting tensorflow-estimator==1.13.0rc0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/67/c1/3e8f58945f55769274e490d85df3bc4639ac258c60c6e3c6c7973d2a9e81/tensorflow_estimator-1.13.0rc0-py2.py3-none-any.whl (367kB)
+    100% |████████████████████████████████| 368kB 4.2MB/s 
+Collecting termcolor==1.1.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting tqdm==4.31.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/6c/4b/c38b5144cf167c4f52288517436ccafefe9dc01b8d1c190e18a6b154cd4a/tqdm-4.31.1-py2.py3-none-any.whl (48kB)
+    100% |████████████████████████████████| 51kB 5.7MB/s 
+Collecting urllib3==1.24.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/62/00/ee1d7de624db8ba7090d1226aebefab96a2c71cd5cfa7629d6ad3f61b79e/urllib3-1.24.1-py2.py3-none-any.whl (118kB)
+    100% |████████████████████████████████| 122kB 7.1MB/s 
+Collecting Werkzeug==0.14.1 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl (322kB)
+    100% |████████████████████████████████| 327kB 4.9MB/s 
+Collecting zmq==0.0.0 (from gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/6e/78/833b2808793c1619835edb1a4e17a023d5d625f4f97ff25ffff986d1f472/zmq-0.0.0.tar.gz
+Requirement already satisfied: setuptools in /home/srlxprmntsleon/.pyenv/versions/3.6.4/envs/gym-kuka-3.6.4/lib/python3.6/site-packages (from kiwisolver==1.0.1->gym-kuka-mujoco==0.0.1)
+Collecting wheel>=0.26; python_version >= "3" (from tensorboard==1.12.2->gym-kuka-mujoco==0.0.1)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/a7/00/3df031b3ecd5444d572141321537080b40c1c25e1caa3d86cdd12e5e919c/wheel-0.35.1-py2.py3-none-any.whl
+Installing collected packages: six, absl-py, astor, certifi, pycparser, cffi, chardet, Click, cloudpickle, commentjson, cycler, Cython, dill, future, gast, glfw, glob2, grpcio, numpy, scipy, idna, urllib3, requests, pyglet, gym, h5py, Pillow, imageio, joblib, Keras-Applications, Keras-Preprocessing, kiwisolver, lockfile, Markdown, python-dateutil, pyparsing, matplotlib, pbr, mock, mpi4py, mujoco-py, opencv-python, pytz, pandas, python-utils, progressbar2, protobuf, pyzmq, seaborn, zmq, tqdm, stable-baselines, wheel, Werkzeug, tensorboard, tensorflow-estimator, termcolor, tensorflow, gym-kuka-mujoco
+  Running setup.py install for absl-py ... done
+  Running setup.py install for pycparser ... done
+  Running setup.py install for commentjson ... done
+  Running setup.py install for dill ... done
+  Running setup.py install for future ... done
+  Running setup.py install for gast ... done
+  Running setup.py install for glfw ... done
+  Running setup.py install for glob2 ... done
+  Running setup.py install for gym ... done
+  Running setup.py install for mpi4py ... done
+  Running setup.py install for mujoco-py ... error
+    Complete output from command /home/srlxprmntsleon/.pyenv/versions/3.6.4/envs/gym-kuka-3.6.4/bin/python3.6 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-bmust9o3/mujoco-py/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-ro1d1cn3-record/install-record.txt --single-version-externally-managed --compile --install-headers /home/srlxprmntsleon/.pyenv/versions/3.6.4/envs/gym-kuka-3.6.4/include/site/python3.6/mujoco-py:
+    running install
+    running build
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-build-bmust9o3/mujoco-py/setup.py", line 44, in <module>
+        tests_require=read_requirements_file('requirements.dev.txt'),
+      File "/home/srlxprmntsleon/.pyenv/versions/3.6.4/lib/python3.6/distutils/core.py", line 148, in setup
+        dist.run_commands()
+      File "/home/srlxprmntsleon/.pyenv/versions/3.6.4/lib/python3.6/distutils/dist.py", line 955, in run_commands
+        self.run_command(cmd)
+      File "/home/srlxprmntsleon/.pyenv/versions/3.6.4/lib/python3.6/distutils/dist.py", line 974, in run_command
+        cmd_obj.run()
+      File "/home/srlxprmntsleon/.pyenv/versions/3.6.4/envs/gym-kuka-3.6.4/lib/python3.6/site-packages/setuptools/command/install.py", line 61, in run
+        return orig.install.run(self)
+      File "/home/srlxprmntsleon/.pyenv/versions/3.6.4/lib/python3.6/distutils/command/install.py", line 545, in run
+        self.run_command('build')
+      File "/home/srlxprmntsleon/.pyenv/versions/3.6.4/lib/python3.6/distutils/cmd.py", line 313, in run_command
+        self.distribution.run_command(command)
+      File "/home/srlxprmntsleon/.pyenv/versions/3.6.4/lib/python3.6/distutils/dist.py", line 974, in run_command
+        cmd_obj.run()
+      File "/tmp/pip-build-bmust9o3/mujoco-py/setup.py", line 28, in run
+        import mujoco_py  # noqa: force build
+      File "/tmp/pip-build-bmust9o3/mujoco-py/mujoco_py/__init__.py", line 3, in <module>
+        from mujoco_py.builder import cymj, ignore_mujoco_warnings, functions, MujocoException
+      File "/tmp/pip-build-bmust9o3/mujoco-py/mujoco_py/builder.py", line 503, in <module>
+        cymj = load_cython_ext(mjpro_path)
+      File "/tmp/pip-build-bmust9o3/mujoco-py/mujoco_py/builder.py", line 69, in load_cython_ext
+        _ensure_set_env_var("LD_LIBRARY_PATH", lib_path)
+      File "/tmp/pip-build-bmust9o3/mujoco-py/mujoco_py/builder.py", line 118, in _ensure_set_env_var
+        var_name, var_name, lib_path))
+    Exception:
+    Missing path to your environment variable.
+    Current values LD_LIBRARY_PATH=:/home/srlxprmntsleon/.mujoco/mujoco200/bin:/usr/local/cuda/lib64
+    Please add following line to .bashrc:
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/srlxprmntsleon/.mujoco/mjpro150/bin
+    
+    ----------------------------------------
+Command "/home/srlxprmntsleon/.pyenv/versions/3.6.4/envs/gym-kuka-3.6.4/bin/python3.6 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-bmust9o3/mujoco-py/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-ro1d1cn3-record/install-record.txt --single-version-externally-managed --compile --install-headers /home/srlxprmntsleon/.pyenv/versions/3.6.4/envs/gym-kuka-3.6.4/include/site/python3.6/mujoco-py" failed with error code 1 in /tmp/pip-build-bmust9o3/mujoco-py/
+You are using pip version 9.0.1, however version 20.2.4 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+
