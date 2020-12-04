@@ -20,6 +20,8 @@ from play_model import replay_model
 from gym_kuka_mujoco.wrappers import TBVecEnvWrapper
 from gym_kuka_mujoco.envs import *
 
+# MODIFICATION TO THE ORIGINAL LEARN_ENVIRONMENT SCRIPT
+# added observation normalization...
 
 def PPO_callback(_locals, _globals, log_dir):
     """
@@ -119,6 +121,11 @@ def run_learn(params, save_path, model=None, run_count=0):
         env = SubprocVecEnv(envs)
     else:
         env = DummyVecEnv(envs)
+
+    # Observation normalization
+    if params.get('normalize_obs', False):
+        env = VecNormalize(env, gamma=actor_options['gamma'] ,training=True, norm_obs=True, norm_reward=False, clip_obs=np.inf, clip_reward=np.inf)
+    
     env = TBVecEnvWrapper(
         env, save_path, info_keywords=params.get('info_keywords', tuple()))
 
@@ -152,10 +159,15 @@ def run_learn(params, save_path, model=None, run_count=0):
     model.learn(callback=learn_callback, **learning_options)
 
     # Save the model
-    
     model_save_path = os.path.join(run_save_path, 'model')
     print("Saving the model to:\n{}".format(model_save_path))
     model.save(model_save_path)
+    
+    # Save the running average
+    if params.get('normalize_obs', True):
+        running_average_path = run_save_path
+        print("Saving the running average to:\n{}".format(running_average_path))
+        env.save_running_average(running_average_path)
 
     return model
 

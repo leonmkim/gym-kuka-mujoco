@@ -9,7 +9,7 @@ from gym_kuka_mujoco.utils.projection import rotate_cost_by_matrix
 from gym_kuka_mujoco.utils.quaternion import mat2Quat, subQuat, quatAdd
 from gym_kuka_mujoco.envs.assets import kuka_asset_dir
 
-class PegInsertionEnv(kuka_env.KukaEnv):
+class ModPegInsertionEnv(kuka_env.KukaEnv):
     
     def __init__(self,
                  *args,
@@ -27,6 +27,10 @@ class PegInsertionEnv(kuka_env.KukaEnv):
                  sparse_cost=False,
                  observe_joints=True,
                  in_peg_frame=False,
+                 use_peg_tip_pose_obs=False,
+                 use_peg_tip_vel_obs=True,
+                 use_hole_bot_obs=True,
+                 use_hole_top_obs=True,
                  random_hole_file='random_reachable_holes_small_randomness.npy',
                  init_randomness=0.01,
                  **kwargs):
@@ -44,6 +48,10 @@ class PegInsertionEnv(kuka_env.KukaEnv):
         self.quadratic_rot_cost = quadratic_rot_cost
         self.observe_joints = observe_joints
         self.in_peg_frame = in_peg_frame
+        self.use_peg_tip_pose_obs= use_peg_tip_pose_obs,
+        self.use_peg_tip_vel_obs= use_peg_tip_vel_obs,
+        self.use_hole_bot_obs= use_hole_bot_obs,
+        self.use_hole_top_obs= use_hole_top_obs,
         self.init_randomness = init_randomness
         
         # Resolve the models path based on the hole_id.
@@ -52,7 +60,7 @@ class PegInsertionEnv(kuka_env.KukaEnv):
             kwargs['model_path'] = kwargs.get('model_path', 'full_peg_insertion_experiment{}_moving_hole_id={:03d}.xml'.format(gravity_string, hole_id))
         else:
             kwargs['model_path'] = kwargs.get('model_path', 'full_peg_insertion_experiment_no_hole{}.xml').format(gravity_string)       
-        super(PegInsertionEnv, self).__init__(*args, **kwargs)
+        super(ModPegInsertionEnv, self).__init__(*args, **kwargs)
         
 
         self.Q_pos = np.diag([100,100,100])
@@ -139,6 +147,7 @@ class PegInsertionEnv(kuka_env.KukaEnv):
         info['qpos'] = self.data.qpos.copy()
         info['qvel'] = self.data.qvel.copy()
         info['action'] = self.last_action
+        # info['ft_obs'] = self.sim.data.sensordata
         return info
 
     def _get_state_obs(self):
@@ -148,7 +157,7 @@ class PegInsertionEnv(kuka_env.KukaEnv):
 
         # Return superclass observation.
         if self.observe_joints:
-            obs = super(PegInsertionEnv, self)._get_state_obs()
+            obs = super(ModPegInsertionEnv, self)._get_state_obs()
         else:
             obs = np.zeros(0)
 
@@ -160,7 +169,7 @@ class PegInsertionEnv(kuka_env.KukaEnv):
             ft_obs = self.sim.data.sensordata
             
 
-            obs = obs / self.obs_scaling
+            # obs = obs / self.obs_scaling
 
         if self.use_ft_sensor:
             obs = np.concatenate([obs, ft_obs])
@@ -168,6 +177,9 @@ class PegInsertionEnv(kuka_env.KukaEnv):
         # End effector position
         pos, rot = forwardKinSite(self.sim, ['peg_tip','hole_base','hole_top'])
         
+        peg_tip_pos_obs = pos[0]
+        peg_tip_rot_obs = mat2Quat(rot[0])
+
         if self.use_rel_pos_err:
             pos_obs = pos[1] - pos[0]
             quat_peg_tip = mat2Quat(rot[0])
@@ -192,8 +204,21 @@ class PegInsertionEnv(kuka_env.KukaEnv):
             hole_top_obs = rot[0].T.dot(hole_top_obs)
             peg_tip_lin_vel = rot[0].T.dot(peg_tip_lin_vel)
             peg_tip_rot_vel = rot[0].T.dot(peg_tip_rot_vel)
+            peg_tip_pos_obs = rot[0].T.dot(peg_tip_pos_obs)
+        
+        if self.use_hole_bot_obs:
+            obs = np.concatenate([obs, pos_obs, rot_obs])
+                
+        if self.use_hole_top_obs:
+            obs = np.concatenate([obs, hole_top_obs])
 
-        obs = np.concatenate([obs, pos_obs, rot_obs, peg_tip_lin_vel, peg_tip_rot_vel, hole_top_obs])
+        if self.use_peg_tip_pose_obs:
+            obs = np.concatenate([obs, peg_tip_pos_obs, peg_tip_rot_obs])
+        
+        if self.use_peg_tip_vel_obs:
+            obs = np.concatenate([obs, peg_tip_lin_vel, peg_tip_rot_vel])
+
+        # obs = np.concatenate([obs, pos_obs, rot_obs, peg_tip_lin_vel, peg_tip_rot_vel, hole_top_obs])
 
         return obs
 

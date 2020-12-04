@@ -94,6 +94,7 @@ class TBVecEnvWrapper(VecEnvWrapper):
         self.episode_infos = [dict() for _ in range(self.venv.num_envs)]
         self.total_steps = 0
 
+
     def step_wait(self):
         """
         Step the environment with the given action
