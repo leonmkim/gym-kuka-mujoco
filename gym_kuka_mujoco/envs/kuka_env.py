@@ -119,7 +119,8 @@ class KukaEnv(mujoco_env.MujocoEnv, utils.EzPickle):
 
     def _update_action(self, a):
         '''
-        This function is called once per step.
+        This function is called once per frameskip (which is really 10 steps)
+        policy is evaluated and outputs action which updates controller setpoint
         '''
         self.controller.set_action(a)
 

@@ -31,7 +31,7 @@
         "init_randomness": 0.01,
         "controller": "ImpedanceControllerV2",
         "controller_options": {
-            "model_path": "full_peg_insertion_experiment_no_collision_no_gravity.xml",
+            "model_path": "full_peg_insertion_experiment_no_collision.xml",
             "pos_scale": 0.3,
             "rot_scale": 0.1,
             "stiffness": [2.0, 2.0, 2.0, 6.0, 6.0, 6.0],
@@ -49,5 +49,6 @@
     "n_env": 8,
     "policy_type": "MlpPolicy",
     "normalize_obs": true,
-    "vectorized": true
+    "vectorized": true,
+    "ID": "1"
 }

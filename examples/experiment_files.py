@@ -33,16 +33,19 @@ def new_experiment_dir(params, prefix=None, date=True, short_description=False):
         path_list.append(time)
 
     # Add a description to the path
+    # Ablation: Add ID if there is one
     if short_description:
         description = '_'.join([
             params['env_options']['controller'],
             params['env'],
-            params['alg']])
+            params['alg'],
+            params.get('ID', '')])
     else:
         description = [
             'alg={}'.format(params['alg']),
             'env={}'.format(params['env']),
-            'controller={}'.format(params['env_options']['controller'])
+            'controller={}'.format(params['env_options']['controller']),
+            'ID={}'.format(params.get('ID', ''))
         ]
         for k,v in sorted(params['learning_options'].items()):
             description.append('{}={}'.format(k,v))

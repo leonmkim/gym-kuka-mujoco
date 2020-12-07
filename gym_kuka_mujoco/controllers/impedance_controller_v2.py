@@ -33,6 +33,8 @@ class ImpedanceControllerV2(BaseController):
         super(ImpedanceControllerV2, self).__init__(sim)
 
         # Create a model for control
+        print('Controller model imported from: {}'.format(model_path))
+
         model_path = os.path.join(kuka_asset_dir(), model_path)
         self.model = mujoco_py.load_model_from_path(model_path)
 
@@ -100,6 +102,8 @@ class ImpedanceControllerV2(BaseController):
         dx = action[0:3].astype(np.float64)
         dr = action[3:6].astype(np.float64)
 
+        # print('dx is: {} and dr is: {}'.format(dx, dr) )
+
         pos, mat = forwardKinSite(self.sim, self.site_name, recompute=False)
         quat = mat2Quat(mat)
         
@@ -108,6 +112,9 @@ class ImpedanceControllerV2(BaseController):
 
         self.pos_set = pos + dx
         self.quat_set = quatAdd(quat, dr)
+
+        # print('pos setpoint updated: {}'.format(self.pos_set))
+
 
     def get_torque(self):
         '''

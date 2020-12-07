@@ -71,6 +71,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # Load the model if it's availeble, otherwise that latest checkpoint.
+    print('Loading model from directory: {}'.format(args.directory))
+    
     experiment_dir = get_latest_experiment_dir(args.directory)
     params_path = get_params(experiment_dir)
     params = load_params(params_path)

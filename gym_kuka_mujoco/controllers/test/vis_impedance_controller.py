@@ -33,9 +33,19 @@ def render_point(viewer, pos):
 
 def vis_impedance_fixed_setpoint(collision=False):
     options = dict()
-    options['model_path'] = 'full_kuka_no_collision.xml'
-    options['rot_scale'] = .3
-    options['stiffness'] = np.array([10.,10.,10.,10.,10.,10.])
+    # options['model_path'] = 'full_kuka_no_collision.xml'
+    # options['model_path'] = 'full_kuka_mesh_collision.xml'
+    # options['model_path'] = 'full_peg_insertion_experiment_no_hole_no_gravity.xml'
+    options['model_path'] = 'full_falling_peg_no_gravity.xml'
+    options['pos_scale'] = .3
+    options['rot_scale'] = .1
+
+    options['site_name'] = 'peg_tip' 
+    options['in_ee_frame'] = True
+
+
+    # options['stiffness'] = np.array([10.,10.,10.,10.,10.,10.])
+    options['stiffness'] = np.array([2.0, 2.0, 2.0, 6.0, 6.0, 6.0])
 
     sim = create_sim(collision=collision)
     controller = ImpedanceControllerV2(sim, **options)
