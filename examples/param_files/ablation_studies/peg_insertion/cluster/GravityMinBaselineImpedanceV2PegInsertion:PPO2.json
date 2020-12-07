@@ -21,13 +21,13 @@
         "random_hole_file": "random_reachable_holes_small_randomness.npy",
         "use_rel_pos_err": true,
         "gravity": true,
-        "observe_joints": true,
+        "observe_joints": false,
         "use_ft_sensor": false,
         "in_peg_frame": true,
         "use_peg_tip_pose_obs": false,
-        "use_peg_tip_vel_obs": false,
-        "use_hole_bot_obs": false,
-        "use_hole_top_obs": false,
+        "use_peg_tip_vel_obs": true,
+        "use_hole_bot_obs": true,
+        "use_hole_top_obs": true,
         "init_randomness": 0.01,
         "controller": "ImpedanceControllerV2",
         "controller_options": {
@@ -50,5 +50,5 @@
     "policy_type": "MlpPolicy",
     "normalize_obs": false,
     "vectorized": true,
-    "ID": "4"
+    "ID": "GravityMinBaseline"
 }

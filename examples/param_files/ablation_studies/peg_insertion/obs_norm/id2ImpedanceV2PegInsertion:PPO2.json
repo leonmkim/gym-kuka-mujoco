@@ -22,7 +22,7 @@
         "use_rel_pos_err": true,
         "gravity": true,
         "observe_joints": true,
-        "use_ft_sensor": false,
+        "use_ft_sensor": true,
         "in_peg_frame": true,
         "use_peg_tip_pose_obs": false,
         "use_peg_tip_vel_obs": false,
@@ -44,11 +44,11 @@
         "success"
     ],
     "learning_options": {
-        "total_timesteps": 1000000
+        "total_timesteps": 500000
     },
     "n_env": 8,
     "policy_type": "MlpPolicy",
-    "normalize_obs": false,
+    "normalize_obs": true,
     "vectorized": true,
-    "ID": "4"
+    "ID": "2"
 }

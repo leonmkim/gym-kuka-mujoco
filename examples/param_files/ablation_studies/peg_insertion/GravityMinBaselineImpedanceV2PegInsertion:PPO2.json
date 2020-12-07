@@ -44,11 +44,11 @@
         "success"
     ],
     "learning_options": {
-        "total_timesteps": 500000
+        "total_timesteps": 1000000
     },
     "n_env": 8,
     "policy_type": "MlpPolicy",
     "normalize_obs": false,
     "vectorized": true,
-    "ID": "GravityBaseline"
+    "ID": "GravityMinBaseline"
 }

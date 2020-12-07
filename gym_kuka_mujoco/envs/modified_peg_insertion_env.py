@@ -56,7 +56,7 @@ class ModPegInsertionEnv(kuka_env.KukaEnv):
 
         print('ModPegInsertion Env Loaded')
 
-        print('ft: {}, peg_tip_pos: {},peg_tip_vel: {},hole_bot: {},hole_top: {}'.format(use_ft_sensor, use_peg_tip_pose_obs, use_peg_tip_vel_obs, use_hole_bot_obs, use_hole_top_obs))
+        # print('ft: {}, peg_tip_pos: {},peg_tip_vel: {},hole_bot: {},hole_top: {}'.format(use_ft_sensor, use_peg_tip_pose_obs, use_peg_tip_vel_obs, use_hole_bot_obs, use_hole_top_obs))
         
         # Resolve the models path based on the hole_id.
         gravity_string = '' if gravity else '_no_gravity'
@@ -161,7 +161,7 @@ class ModPegInsertionEnv(kuka_env.KukaEnv):
 
         # Return superclass observation.
         if self.observe_joints:
-            print('adding proprioception')
+            # print('adding proprioception')
             obs = super(ModPegInsertionEnv, self)._get_state_obs()
         else:
             obs = np.zeros(0)
@@ -209,26 +209,26 @@ class ModPegInsertionEnv(kuka_env.KukaEnv):
             peg_tip_pos_obs = rot[0].T.dot(peg_tip_pos_obs)
         
         if self.use_ft_sensor:
-            print('adding ft_sensor to observation')
+            # print('adding ft_sensor to observation')
             obs = np.concatenate([obs, ft_obs])
 
         if self.use_hole_bot_obs:
-            print('adding hole_bot to observation')
+            # print('adding hole_bot to observation')
             obs = np.concatenate([obs, pos_obs, rot_obs])
                 
         if self.use_hole_top_obs:
-            print('adding hole_top to observation')
+            # print('adding hole_top to observation')
             obs = np.concatenate([obs, hole_top_obs])
 
         if self.use_peg_tip_pose_obs:
-            print('adding peg_tip_pose to observation')
+            # print('adding peg_tip_pose to observation')
             obs = np.concatenate([obs, peg_tip_pos_obs, peg_tip_rot_obs])
         
         if self.use_peg_tip_vel_obs:
-            print('adding peg_tip_vel to observation')
+            # print('adding peg_tip_vel to observation')
             obs = np.concatenate([obs, peg_tip_lin_vel, peg_tip_rot_vel])
 
-        print('size of obs vector is: {}'.format(obs.size))
+        # print('size of obs vector is: {}'.format(obs.size))
 
         # obs = np.concatenate([obs, pos_obs, rot_obs, peg_tip_lin_vel, peg_tip_rot_vel, hole_top_obs])
 
