@@ -6,8 +6,8 @@
 #SBATCH --qos=dinesh-high
 #SBATCH --job-name=gym-kuka-ablation
 
-python3 modified_learn_environment.py --param_file=ablation_studies/peg_insertion/cluster/baselines/NoGravityMinBaselineImpedanceV2PegInsertion:PPO2.json >baseline_ablation_no_gravity_min_baseline.out 2>&1 &
-python3 modified_learn_environment.py --param_file=ablation_studies/peg_insertion/cluster/baselines/NoGravityBaselineImpedanceV2PegInsertion:PPO2.json >baseline_ablation_no_gravity_baseline.out 2>&1 &
-python3 modified_learn_environment.py --param_file=ablation_studies/peg_insertion/cluster/baselines/NoGravityMinBaselineObsNormImpedanceV2PegInsertion:PPO2.json >baseline_ablation_no_gravity_min_baseline_obs_norm.out 2>&1 &
-python3 modified_learn_environment.py --param_file=ablation_studies/peg_insertion/cluster/baselines/GravityMinBaselineImpedanceV2PegInsertion:PPO2.json >baseline_ablation_gravity_min_baseline.out 2>&1 &
+python3 modified_learn_environment.py --param_file=ablation_studies/peg_insertion/cluster/NoGravityMinBaselineImpedanceV2PegInsertion:PPO2.json >baseline_ablation_no_gravity_min_baseline.out 2>&1 &
+python3 modified_learn_environment.py --param_file=ablation_studies/peg_insertion/cluster/NoGravityBaselineImpedanceV2PegInsertion:PPO2.json >baseline_ablation_no_gravity_baseline.out 2>&1 &
+python3 modified_learn_environment.py --param_file=ablation_studies/peg_insertion/cluster/NoGravityMinBaselineObsNormImpedanceV2PegInsertion:PPO2.json >baseline_ablation_no_gravity_min_baseline_obs_norm.out 2>&1 &
+python3 modified_learn_environment.py --param_file=ablation_studies/peg_insertion/cluster/GravityMinBaselineImpedanceV2PegInsertion:PPO2.json >baseline_ablation_gravity_min_baseline.out 2>&1 &
 wait
