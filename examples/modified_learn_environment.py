@@ -237,6 +237,7 @@ if __name__ == '__main__':
             model = run_learn(params, save_path, run_count=i)
 
     # Visualize.
-    env_cls = globals()[params['env']]
-    env = env_cls(**params['env_options'])
-    replay_model(env, model)
+
+    # env_cls = globals()[params['env']]
+    # env = env_cls(**params['env_options'])
+    # replay_model(env, model)
