@@ -36,7 +36,8 @@ def vis_impedance_fixed_setpoint(collision=False):
     # options['model_path'] = 'full_kuka_no_collision.xml'
     # options['model_path'] = 'full_kuka_mesh_collision.xml'
     # options['model_path'] = 'full_peg_insertion_experiment_no_hole_no_gravity.xml'
-    options['model_path'] = 'full_falling_peg_no_gravity.xml'
+    options['model_path'] = 'full_peg_insertion_experiment_no_hole.xml'
+    # options['model_path'] = 'full_falling_peg_no_gravity.xml'
     options['pos_scale'] = .3
     options['rot_scale'] = .1
 

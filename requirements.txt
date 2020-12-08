@@ -27,7 +27,8 @@ Markdown==3.0.1
 matplotlib==3.0.2
 mock==2.0.0
 mpi4py==3.0.1
-mujoco-py==1.50.1.68
+# mujoco-py==1.50.1.68
+mujoco-py==2.0.2.13
 numpy==1.16.1
 opencv-python==4.0.0.21
 pandas==0.24.1
