@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #SBATCH --cpus-per-task 12
 #SBATCH --gpus=1
-#SBATCH --time=24:00:00
+#SBATCH --time=40:00:00
 #SBATCH --partition=dinesh-compute
 #SBATCH --qos=dinesh-high
 #SBATCH --job-name=gym-kuka-ablation
