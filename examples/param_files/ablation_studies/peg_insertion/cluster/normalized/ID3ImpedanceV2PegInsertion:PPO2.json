@@ -22,7 +22,7 @@
         "use_rel_pos_err": true,
         "gravity": true,
         "observe_joints": true,
-        "use_ft_sensor": true,
+        "use_ft_sensor": false,
         "in_peg_frame": true,
         "use_peg_tip_pose_obs": false,
         "use_peg_tip_vel_obs": false,
@@ -50,5 +50,5 @@
     "policy_type": "MlpPolicy",
     "normalize_obs": true,
     "vectorized": true,
-    "ID": "1"
+    "ID": "3"
 }
