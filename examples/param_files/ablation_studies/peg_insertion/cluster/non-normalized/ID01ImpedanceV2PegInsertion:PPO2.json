@@ -50,5 +50,5 @@
     "policy_type": "MlpPolicy",
     "normalize_obs": false,
     "vectorized": true,
-    "ID": "1"
+    "ID": "01"
 }
