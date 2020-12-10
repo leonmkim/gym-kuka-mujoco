@@ -48,7 +48,7 @@
     },
     "n_env": 8,
     "policy_type": "MlpPolicy",
-    "normalize_obs": true,
+    "normalize_obs": false,
     "vectorized": true,
     "ID": "1"
 }

@@ -26,8 +26,8 @@
         "in_peg_frame": true,
         "use_peg_tip_pose_obs": false,
         "use_peg_tip_vel_obs": false,
-        "use_hole_bot_obs": true,
-        "use_hole_top_obs": true,
+        "use_hole_bot_obs": false,
+        "use_hole_top_obs": false,
         "init_randomness": 0.01,
         "controller": "ImpedanceControllerV2",
         "controller_options": {
@@ -50,5 +50,5 @@
     "policy_type": "MlpPolicy",
     "normalize_obs": true,
     "vectorized": true,
-    "ID": "3"
+    "ID": "04"
 }

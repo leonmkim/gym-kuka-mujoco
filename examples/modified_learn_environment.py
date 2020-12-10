@@ -167,7 +167,7 @@ def run_learn(params, save_path, model=None, run_count=0):
     if params.get('normalize_obs', True):
         running_average_path = run_save_path
         print("Saving the running average to:\n{}".format(running_average_path))
-        env.save_running_average(running_average_path)
+        env.venv.save_running_average(running_average_path)
 
     return model
 
